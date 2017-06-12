@@ -24,9 +24,8 @@ YAML.load('steps.yml', function(docs)
     var parts = docs.parts;
 
     parts.forEach(function (item) {
-        markdown = markdown + "## " + item.name + "\n"
+        markdown = markdown + "\n\n## " + item.name + "\n"
         var part = item.name;
-        markdown = markdown + "\n\n### " + item.name + "\n\n"
         var stepNum = 0;
         var stepList = item.steps;
 
